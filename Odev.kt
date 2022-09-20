@@ -2,7 +2,7 @@ fun main(args: Array<String>) {
     println("-----------------------------------------------------------------")
     println("--------------------Assingment 1 Check---------------------------")
 
-    //
+    
     val test1 = "aa_"
     val test2 = "u__hello_world123"
     println(codeUserNameValidation(test1)) // Expect false
@@ -11,7 +11,7 @@ fun main(args: Array<String>) {
     println("-----------------------------------------------------------------")
     println("--------------------Assingment 2 Check---------------------------")
 
-    //Assingment 2 Check
+   
     val test3 = arrayOf<Int>(100004,100002,100005,1000010,100004) // 1400025
     println(veryBigSum(test3))
 
@@ -19,7 +19,7 @@ fun main(args: Array<String>) {
     println("-----------------------------------------------------------------")
     println("--------------------Assingment 4 Check---------------------------")
 
-    //Assingment 4 Check
+ 
     val test4 = 4
     val test5 = 8
     println(firstFactorial(test4)) // Expect 24
@@ -28,7 +28,7 @@ fun main(args: Array<String>) {
     println("-----------------------------------------------------------------")
     println("--------------------Assingment 5 Check---------------------------")
 
-    //Assingment 5 Check
+
     val test6 = "arrb6???4xxbl5???eee5"
     val test7 = "aa6?9"
     val test8 = "acc?7??sss?3rr1??????5"
