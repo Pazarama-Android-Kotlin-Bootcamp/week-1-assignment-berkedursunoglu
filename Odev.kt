@@ -12,7 +12,7 @@ fun main(args: Array<String>) {
     println("--------------------Assingment 2 Check---------------------------")
 
     //Assingment 2 Check
-    val test3 = arrayOf<Long>(100004,100002,100005,1000010,100004) // 1400025
+    val test3 = arrayOf<Int>(100004,100002,100005,1000010,100004) // 1400025
     println(veryBigSum(test3))
 
 
@@ -71,7 +71,7 @@ private fun codeUserNameValidation(userName: String): String {
 }
 
 //Assingment 2
-private fun veryBigSum(array: Array<Long>): Long {
+private fun veryBigSum(array: Array<Int>): Long {
     //The variable to which we will pass the sum of the data in the incoming array.
     var sum: Long = 0
 
