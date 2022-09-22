@@ -1,44 +1,46 @@
 fun main(args: Array<String>) {
-    println("-----------------------------------------------------------------")
-    println("--------------------Assingment 1 Check---------------------------")
 
-    //
-    val test1 = "aa_"
-    val test2 = "u__hello_world123"
-    println(codeUserNameValidation(test1)) // Expect false
-    println(codeUserNameValidation(test2)) // Expect true
+    //We run the function that the user wants to run by receiving data from when.
+    println("Choise a assingment \"1\",\"2\",\"4\",\"5\".")
+    when(readLine()){
+        "1" -> {
+            println("--------------------Assingment 1 Check---------------------------")
 
-    println("-----------------------------------------------------------------")
-    println("--------------------Assingment 2 Check---------------------------")
+            println("First Input:\"aa_\" Expect False ")
+            println(codeUserNameValidation("aa_"))
+            println("First Input:\"u__hello_world123\" Expect True ")
+            println(codeUserNameValidation("u__hello_world123"))
+        }
+        "2" -> {
+            println("--------------------Assingment 2 Check---------------------------")
 
-    //Assingment 2 Check
-    val test3 = arrayOf<Int>(100004,100002,100005,1000010,100004) // 1400025
-    println(veryBigSum(test3))
+            /*We divide the string value received from the user into spaces with the split method, so we have an array.
+            We use the map method to convert the string type to int. Our function expects an array value,
+            so we translate the resulting list reference into array.*/
+            println("Enter numbers with spaces between them.")
+            val array = readLine()?.trim()?.split(" ")?.map { it.toInt() }?.toTypedArray()
 
+            println(veryBigSum(array!!))
+        }
+        "3" -> {
+            println("--------------------Assingment 4 Check---------------------------")
 
-    println("-----------------------------------------------------------------")
-    println("--------------------Assingment 4 Check---------------------------")
+            println("First Input:\"4\" Expect \"24\" ")
+            println(firstFactorial(4)) // Expect 24
+            println("First Input:\"8\" Expect \"40320\" ")
+            println(firstFactorial(8)) // Expect 40320
+        }
+        "4" -> {
+            println("--------------------Assingment 5 Check---------------------------")
 
-    //Assingment 4 Check
-    val test4 = 4
-    val test5 = 8
-    println(firstFactorial(test4)) // Expect 24
-    println(firstFactorial(test5)) // Expect 40320
-
-    println("-----------------------------------------------------------------")
-    println("--------------------Assingment 5 Check---------------------------")
-
-    //Assingment 5 Check
-    val test6 = "arrb6???4xxbl5???eee5"
-    val test7 = "aa6?9"
-    val test8 = "acc?7??sss?3rr1??????5"
-    println(questionsMarks(test6)) // Expect true
-    println(questionsMarks(test7))  // Expect false
-    println(questionsMarks(test8))  // Expect true
-
-    println("-----------------------------------------------------------------")
-    println("-----------------------------------------------------------------")
-
+            println("First Input:\"arrb6???4xxbl5???eee5\" Expect \"true\" ")
+            println(questionsMarks("arrb6???4xxbl5???eee5"))
+            println("First Input:\"aa6?9\" Expect \"false\" ")
+            println(questionsMarks("aa6?9"))
+            println("First Input:\"acc?7??sss?3rr1??????5\" Expect \"true\" ")
+            println(questionsMarks("acc?7??sss?3rr1??????5"))
+        }
+    }
 }
 
 
@@ -99,7 +101,6 @@ private fun firstFactorial(num: Int): Int {
 
 //Assingment 5
 private fun questionsMarks(str: String): String {
-
     //Initializing required variables in the loop
     var firstNumber = 0
     var secondNumber = 0
