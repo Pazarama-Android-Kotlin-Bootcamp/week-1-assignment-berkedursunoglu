@@ -13,7 +13,6 @@ fun main(args: Array<String>) {
         }
         "2" -> {
             println("--------------------Assingment 2 Check---------------------------")
-
             /*We divide the string value received from the user into spaces with the split method, so we have an array.
             We use the map method to convert the string type to int. Our function expects an array value,
             so we translate the resulting list reference into array.*/
