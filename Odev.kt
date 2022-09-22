@@ -19,7 +19,6 @@ fun main(args: Array<String>) {
             so we translate the resulting list reference into array.*/
             println("Enter numbers with spaces between them.")
             val array = readLine()?.trim()?.split(" ")?.map { it.toInt() }?.toTypedArray()
-
             println(veryBigSum(array!!))
         }
         "3" -> {
