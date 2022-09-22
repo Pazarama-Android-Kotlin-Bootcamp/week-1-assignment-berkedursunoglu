@@ -20,7 +20,7 @@ fun main(args: Array<String>) {
             val array = readLine()?.trim()?.split(" ")?.map { it.toInt() }?.toTypedArray()
             println(veryBigSum(array!!))
         }
-        "3" -> {
+        "4" -> {
             println("--------------------Assingment 4 Check---------------------------")
 
             println("First Input:\"4\" Expect \"24\" ")
@@ -28,7 +28,7 @@ fun main(args: Array<String>) {
             println("First Input:\"8\" Expect \"40320\" ")
             println(firstFactorial(8)) // Expect 40320
         }
-        "4" -> {
+        "5" -> {
             println("--------------------Assingment 5 Check---------------------------")
 
             println("First Input:\"arrb6???4xxbl5???eee5\" Expect \"true\" ")
